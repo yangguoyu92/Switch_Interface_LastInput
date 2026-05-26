@@ -46,7 +46,7 @@ export CATC_PASSWORD=mypassword
 ## Notes
 
 - The month calculation uses `30 days * months`, so 3 months means 90 days.
-- `--base-url` should be the Catalyst Center server root such as `https://10.124.70.31`. The script now also tolerates `.../dna` and `.../dna/home` and normalizes them automatically.
+- `--base-url` should be the Catalyst Center server root such as `https://10.1.1.1`. The script now also tolerates `.../dna` and `.../dna/home` and normalizes them automatically.
 - This script uses Catalyst Center's `lastIncomingPacketTime` field.
 - That is close to the IOS CLI `Last input` concept, but it is not the exact literal `show interfaces` text field.
 - The script includes client-side rate limiting and retry handling for `429 Too Many Requests` and common `5xx` responses.
